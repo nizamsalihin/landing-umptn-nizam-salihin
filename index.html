@@ -10,6 +10,24 @@
       rel="stylesheet"
     />
     <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            colors: {
+              main: "#747ED1",
+              lightGray: "#d6e2f0",
+              grayishBlue: "#7b879d",
+              darkBlue: "#1f3251",
+            },
+            fontFamily: {
+              urbanist: ["Urbanist"],
+              poppins: ["Poppins"],
+            },
+          },
+        },
+      };
+    </script>
   </head>
   <body>
     <section>
@@ -23,7 +41,7 @@
         <p>pendaftaran ujian masuk perusahaan teknologi nasional dibuka</p>
         <button>Daftar Sekarang</button>
       </div>
-      <div class="min-h-96 w-full">
+      <div class="h-96 w-full">
         <img
           src="images/main.png"
           alt="hero image"
@@ -33,7 +51,7 @@
     </section>
 
     <section class="flex">
-      <div class="min-h-96 w-full">
+      <div class="h-96 w-full">
         <img src="images/landing.png" alt="landing" class="block h-full" />
       </div>
       <div class="flex justify-center flex-col">
@@ -46,12 +64,30 @@
     </section>
 
     <section>
-      <div class="border-2 rounded-sm p-4 text-center">
-        <h2 contenteditable="">Pogram</h2>
-        <p class="capitalize">
-          rektrutmen software developer untuk FAR capital malaysia dengan stack
-          yang diujikan PHP dan Node.js
-        </p>
+      <div class="text-center">
+        <h2 class="font-bold text-5xl mb-10">Pogram</h2>
+        <div class="border-2 inline-block px-10 py-20">
+          <div class="h-48 w-full mb-5">
+            <img
+              src="images/far-capital.jpeg"
+              alt="far capital logo"
+              class="block h-full mx-auto"
+            />
+          </div>
+
+          <h3 class="capitalize mb-4">ujian masuk far capital</h3>
+          <div class="capitalize mb-4">
+            <p>rektrutmen software developer</p>
+            <p>untuk FAR capital malaysia dengan stack</p>
+            <p>yang diujikan PHP dan Node.js</p>
+          </div>
+          <button
+            class="capitalize border-2 px-4 py-2 rounded-md border-main text-main"
+          >
+            daftar sekarang
+          </button>
+          
+        </div>
       </div>
     </section>
   </body>
