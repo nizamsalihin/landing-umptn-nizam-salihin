@@ -6,7 +6,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
-      href="https://fonts.googleapis.com/css2?family=Poppins:wght@500&family=Urbanist:wght@700&display=swap"
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;500&family=Urbanist:wght@700&display=swap"
       rel="stylesheet"
     />
     <script src="https://cdn.tailwindcss.com"></script>
@@ -16,9 +16,7 @@
           extend: {
             colors: {
               main: "#747ED1",
-              lightGray: "#d6e2f0",
-              grayishBlue: "#7b879d",
-              darkBlue: "#1f3251",
+              greylight: "#60697b",
             },
             fontFamily: {
               urbanist: ["Urbanist"],
@@ -29,15 +27,17 @@
       };
     </script>
   </head>
-  <body>
-    <section>
-      <div class="bg-slate-500">
-        <h1 class="capitalize text-center">
+  <body class="font-poppins">
+    <section class="max-w-7xl mx-auto mb-24 py-12">
+      <div class="mb-8">
+        <h1
+          class="capitalize text-center font-urbanist font-bold text-5xl mb-4"
+        >
           <span class="block font-bold">ujian masuk perusahaan</span>
           <span>teknologi nasional</span>
         </h1>
       </div>
-      <div class="capitalize text-center">
+      <div class="capitalize text-center mb-8 text-2xl font-light">
         <p>pendaftaran ujian masuk perusahaan teknologi nasional dibuka</p>
         <button>Daftar Sekarang</button>
       </div>
@@ -50,24 +50,30 @@
       </div>
     </section>
 
-    <section class="flex">
-      <div class="h-96 w-full">
-        <img src="images/landing.png" alt="landing" class="block h-full" />
+    <section class="flex max-w-7xl mx-auto mb-24">
+      <div class="max-h-96 w-full">
+        <img
+          src="images/landing.png"
+          alt="landing"
+          class="block h-full mx-auto"
+        />
       </div>
-      <div class="flex justify-center flex-col">
-        <h2 class="capitalize self-start">apa itu UMPTN?</h2>
-        <p>
+      <div class="flex justify-center flex-col ml-4">
+        <h2 class="capitalize self-start mb-4 text-2xl font-urbanist">
+          apa itu UMPTN?
+        </h2>
+        <p class="text-greylight text-xl font-light">
           Kegiatan seleksi yang ditujukan untuk menyaring talenta digital yang
           siao diserap oleh Perusahaan Teknologi Nasional.
         </p>
       </div>
     </section>
 
-    <section>
+    <section class="">
       <div class="text-center">
-        <h2 class="font-bold text-5xl mb-10">Pogram</h2>
-        <div class="border-2 inline-block px-10 py-20">
-          <div class="h-48 w-full mb-5">
+        <h2 class="font-bold text-4xl mb-10">Pogram</h2>
+        <div class="border-2 inline-block px-10 py-10">
+          <div class="h-48 w-full mb-10">
             <img
               src="images/far-capital.jpeg"
               alt="far capital logo"
@@ -75,8 +81,10 @@
             />
           </div>
 
-          <h3 class="capitalize mb-4">ujian masuk far capital</h3>
-          <div class="capitalize mb-4">
+          <h3 class="capitalize mb-4 text-2xl">ujian masuk far capital</h3>
+          <div
+            class="capitalize text-center mb-8 text-xl font-light text-greylight"
+          >
             <p>rektrutmen software developer</p>
             <p>untuk FAR capital malaysia dengan stack</p>
             <p>yang diujikan PHP dan Node.js</p>
@@ -86,7 +94,6 @@
           >
             daftar sekarang
           </button>
-          
         </div>
       </div>
     </section>
